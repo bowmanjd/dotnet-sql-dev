@@ -19,7 +19,7 @@ The files of interest are in the `.devcontainer` folder:
 - [`Dockerfile`](.devcontainer/Dockerfile): defines a base image and customizations for the development container. See [the Dockerfile reference](https://docs.docker.com/engine/reference/builder/) for more details.
 - [`dev-setup.sh`](.devcontainer/dev-setup.sh): a [Bash](https://learnxinyminutes.com/docs/bash/) script called by the Dockerfile that installs and configures packages in the development container.
 
-Please note that all of the above only engage the _development_ container. You may also want to build a container image for testing and deployment as part of the project. See [ASP.NET Core in a Container] for an example, although, given the above, you would not need to install .NET or C# locally, as it is already in the development container. The development container _builds_, and the application contain is _built_.
+Please note that all of the above only engage the _development_ container. You may also want to build a container image for testing and deployment as part of the project. See [ASP.NET Core in a Container](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core) for an example, although, given the above, you would not need to install .NET or C# locally, as it is already in the development container. The development container _builds_, and the application contain is _built_.
 
 ## Contributing
 
@@ -27,4 +27,4 @@ Please open an issue to suggest changes.
 
 ## License
 
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[![Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE.md)
