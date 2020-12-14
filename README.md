@@ -21,6 +21,13 @@ The files of interest are in the `.devcontainer` folder:
 
 Please note that all of the above only engage the _development_ container. You may also want to build a container image for testing and deployment as part of the project. See [ASP.NET Core in a Container](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core) for an example, although, given the above, you would not need to install .NET or C# locally, as it is already in the development container. The development container _builds_, and the application contain is _built_.
 
+To begin building an ASP.NET app, for instance, you might try:
+
+- Launch the VSCode terminal (Ctrl-Shift-\`), then `dotnet new webapi --no-https`
+- In VSCode, Ctrl-Shift-P then `.NET: Generate Assets for Build and Debug`
+- For some reason, I needed to restart VSCode after the above.
+- In VSCode, Ctrl-Shift-P then `Docker: Add Docker Files to Workspace...`, then `.NET: ASP.NET Core`, then `Linux`, then `5000`. I select `Yes` to generate the Docker Compose files, but this is not necessary if you only need a Dockerfile.
+
 For a decent introduction to developing inside a container with VSCode, see [this article](https://code.visualstudio.com/docs/remote/create-dev-container).
 
 ## Contributing
